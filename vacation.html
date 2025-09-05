@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book an ticket for bali</title>
+</head>
+<style>
+    /* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form container */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form groups */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Input, select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+/* Radio and checkbox styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+/* Radio/checkbox labels inline */
+form div p,
+form div input[type="radio"] + label,
+form div input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    color: #333;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+</style>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input id="name"type="text" placeholder="Enter your name"required>
+        </div>
+        <div>
+
+            <label for="email">Email</label>
+            <input id="email"type="email" placeholder="Enter your email"required>
+        </div> 
+        <div>   
+
+            <label for="phone">Phone</label>
+            <input id="phone"type="number" placeholder="Enter phone number"required>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <input id="address"type="text and number" placeholder="Enter Address" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input id="dob"type="date" required>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="select gender" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">female</option>
+                <option value="other">Other</option>
+            </select>
+              
+        </div>
+
+    <div>
+        <p>Subscription plan</p>
+        <input id="basic" type="radio" name="Subscription" >
+        <label name="basic">Basic</label>
+        
+        <input id="premium"type="radio" name="Subscription">
+        <label name="premium">premium</label>
+        
+        <input id="vip"type="radio" name="Subscription" >
+        <label name="vip">VIP</label>
+
+
+
+    </div>
+    <div>
+        <input id="terms" type="checkbox"required>
+        <label for="terms">I agree to the terms and conditions </label>   
+        
+    </div>
+    <div>
+        
+        <label for="comment">Comment </label>   
+        <textarea id="'comment" row="4" ></textarea>
+        
+    </div>
+    <div>
+        
+       <button type="submit">Submit</button>
+    </div>
+    </form>
+
+    
+</body>
+</html>
